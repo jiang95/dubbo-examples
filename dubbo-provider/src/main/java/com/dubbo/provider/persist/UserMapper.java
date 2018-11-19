@@ -1,0 +1,22 @@
+package com.dubbo.provider.persist;
+
+import com.dubbo.provider.domain.DO.UserDO;
+import com.dubbo.provider.domain.dto.PageDTO;
+
+import java.util.List;
+
+/**
+ * @author: Lucifer
+ * @date: 2018/11/19 21:20
+ * @description:
+ */
+public interface UserMapper {
+
+    void addUser(UserDO user);
+
+    void update(UserDO userDO);
+
+    List<UserDO> selectUser();
+
+    List<UserDO> selectByPage(PageDTO pageDTO);
+}
