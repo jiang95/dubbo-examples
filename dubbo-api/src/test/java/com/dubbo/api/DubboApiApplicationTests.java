@@ -1,4 +1,4 @@
-package com.dubbo.dubboapi;
+package com.dubbo.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -3,6 +3,10 @@ package com.dubbo.consumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author: Lucifer
+ * @desciption: consumer 服务
+ */
 @SpringBootApplication
 public class DubboConsumerApplication {
 

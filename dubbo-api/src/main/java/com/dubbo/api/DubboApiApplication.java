@@ -1,8 +1,12 @@
-package com.dubbo.dubboapi;
+package com.dubbo.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author: Lucifer
+ * @desciption: api 服务
+ * */
 @SpringBootApplication
 public class DubboApiApplication {
 
