@@ -14,7 +14,6 @@ import java.util.List;
  * @date: 2018/11/19 21:01
  * @description:
  */
-@Service
 public class DemoServiceImpl implements DemoService {
 
     @Resource

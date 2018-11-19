@@ -9,9 +9,9 @@ import org.springframework.context.annotation.ImportResource;
  * @author: Lucifer
  * @desciption: provider 服务
  */
-@MapperScan("com.dubbo.provider.persist")
 @SpringBootApplication
-//@ImportResource(value = "dubbo-provider.xml")
+@MapperScan("com.dubbo.provider.persist")
+@ImportResource(locations = {"classpath:dubbo-provider.xml"})
 public class DubboProviderApplication {
 
     public static void main(String[] args) {
