@@ -26,4 +26,12 @@ public class PageDTO {
     public void setSize(Integer size) {
         this.size = size;
     }
+
+    @Override
+    public String toString() {
+        return "PageDTO{" +
+                "start=" + start +
+                ", size=" + size +
+                '}';
+    }
 }
