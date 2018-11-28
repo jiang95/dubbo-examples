@@ -1,10 +1,10 @@
 package com.dubbo.provider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.dubbo.provider.domain.DO.UserDO;
-import com.dubbo.provider.domain.dto.PageDTO;
+import com.dubbo.api.service.DemoService;
+import com.dubbo.api.domain.DO.UserDO;
+import com.dubbo.api.domain.dto.PageDTO;
 import com.dubbo.provider.persist.UserMapper;
-import com.dubbo.provider.service.DemoService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
  * @date: 2018/11/19 21:01
  * @description:
  */
-@Service
+@Service(version = "1.0.0")
 public class DemoServiceImpl implements DemoService {
 
     @Resource

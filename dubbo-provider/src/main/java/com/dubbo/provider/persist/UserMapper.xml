@@ -6,7 +6,7 @@
         id, name,password,card, age,phone, status, createTime, updateTime
     </sql>
 
-    <insert id="addUser" parameterType="com.dubbo.provider.domain.DO.UserDO"
+    <insert id="addUser" parameterType="com.dubbo.api.domain.DO.UserDO"
             useGeneratedKeys="true" keyProperty="id">
         INSERT INTO  user
          (name,password,card,age,phone)
@@ -14,14 +14,14 @@
         (#{name},#{password},#{card},#{age},#{phone})
     </insert>
 
-    <select id="selectUser" resultType="com.dubbo.provider.domain.DO.UserDO">
+    <select id="selectUser" resultType="com.dubbo.api.domain.DO.UserDO">
         select
         <include refid="Base_Column_List"/>
         from user
     </select>
 
-    <select id="selectByPage" parameterType="com.dubbo.provider.domain.dto.PageDTO"
-            resultType="com.dubbo.provider.domain.DO.UserDO">
+    <select id="selectByPage" parameterType="com.dubbo.api.domain.dto.PageDTO"
+            resultType="com.dubbo.api.domain.DO.UserDO">
         select
         <include refid="Base_Column_List"/>
         from user

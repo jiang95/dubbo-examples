@@ -1,7 +1,7 @@
 package com.dubbo.provider.persist;
 
-import com.dubbo.provider.domain.DO.UserDO;
-import com.dubbo.provider.domain.dto.PageDTO;
+import com.dubbo.api.domain.DO.UserDO;
+import com.dubbo.api.domain.dto.PageDTO;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.dubbo.provider;
 
-import com.dubbo.provider.domain.dto.PageDTO;
-import com.dubbo.provider.service.DemoService;
+import com.dubbo.api.domain.dto.PageDTO;
+import com.dubbo.api.service.DemoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

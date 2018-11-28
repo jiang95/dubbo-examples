@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
 @EnableDubbo
 @SpringBootApplication
 @MapperScan("com.dubbo.provider.persist")
-@ImportResource(locations = {"classpath:dubbo-provider.xml"})
+@ImportResource(locations = {"classpath:applicationContext.xml"})
 public class DubboProviderApplication {
 
     public static void main(String[] args) {

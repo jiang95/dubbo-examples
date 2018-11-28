@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @EnableDubbo
 @SpringBootApplication
-@ImportResource(locations = {"classpath:dubbo-consumer.xml"})
+@ImportResource(locations = {"classpath:applicationContext.xml"})
 public class DubboConsumerApplication {
 
     public static void main(String[] args) {

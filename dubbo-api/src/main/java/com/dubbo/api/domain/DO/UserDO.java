@@ -1,5 +1,6 @@
-package com.dubbo.provider.domain.DO;
+package com.dubbo.api.domain.DO;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -7,7 +8,7 @@ import java.time.LocalDateTime;
  * @date: 2018/11/19 21:23
  * @description:
  */
-public class UserDO {
+public class UserDO implements Serializable {
 
     private Long id;
     private String name;
