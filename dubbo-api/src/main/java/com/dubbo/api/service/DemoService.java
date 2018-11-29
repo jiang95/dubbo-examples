@@ -12,5 +12,10 @@ import java.util.List;
  */
 public interface DemoService {
 
+    /**
+     * 分页查询用户信息
+     *
+     * @param pageDTO
+     */
     List<UserDO> findUserList(PageDTO pageDTO);
 }
