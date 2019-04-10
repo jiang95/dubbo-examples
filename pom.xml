@@ -28,6 +28,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <fescar.version>0.4.1</fescar.version>
     </properties>
 
     <dependencies>
@@ -41,6 +42,27 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.fescar</groupId>
+            <artifactId>fescar-spring</artifactId>
+            <version>${fescar.version}</version>
+        </dependency>
+
+        <!--dependency for Apache Dubbo-->
+        <dependency>
+            <groupId>com.alibaba.fescar</groupId>
+            <artifactId>fescar-dubbo</artifactId>
+            <version>${fescar.version}</version>
+        </dependency>
+
+        <!--dependency for Alibaba Dubbo-->
+        <dependency>
+            <groupId>com.alibaba.fescar</groupId>
+            <artifactId>fescar-dubbo-alibaba</artifactId>
+            <version>${fescar.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
