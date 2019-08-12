@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<curator.version>4.0.1</curator.version>
+		<skipTests>true</skipTests>
 	</properties>
 
 	<dependencies>
