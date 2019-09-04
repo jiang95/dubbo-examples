@@ -1,10 +1,10 @@
 package com.dubbo.provider.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
-import com.dubbo.api.service.DemoService;
 import com.dubbo.api.domain.DO.UserDO;
 import com.dubbo.api.domain.dto.PageDTO;
+import com.dubbo.api.service.DemoService;
 import com.dubbo.provider.persist.UserMapper;
+import org.apache.dubbo.config.annotation.Service;
 
 import javax.annotation.Resource;
 import java.util.List;

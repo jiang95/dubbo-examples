@@ -1,16 +1,13 @@
 package com.dubbo.consumer.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.dubbo.api.domain.DO.UserDO;
 import com.dubbo.api.domain.dto.PageDTO;
 import com.dubbo.api.service.DemoService;
 import com.dubbo.consumer.utils.ResponseModel;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * @author: Lucifer

@@ -7,7 +7,10 @@ package com.dubbo.consumer.utils;
  */
 public enum ResponseCodeEnum {
 
-    SUCCSES(200, "Success");
+    /**
+     * 返回成功
+     */
+    SUCCESS(200, "Success");
 
     private Integer code;
 

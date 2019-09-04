@@ -27,7 +27,7 @@ public class ResponseModel<T> implements Serializable {
     }
 
     public static <T> ResponseModel<T> Success() {
-        return new ResponseModel<>(ResponseCodeEnum.SUCCSES.getCode(), ResponseCodeEnum.SUCCSES.getText());
+        return new ResponseModel<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.SUCCESS.getText());
     }
 
     public int getStatus() {
