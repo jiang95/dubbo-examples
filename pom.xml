@@ -55,43 +55,6 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Spring Boot Dubbo 依赖 -->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.spring.boot</groupId>-->
-<!--                <artifactId>dubbo-spring-boot-starter</artifactId>-->
-<!--                <version>2.0.0</version>-->
-<!--            </dependency>-->
-
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.fescar</groupId>-->
-<!--                <artifactId>fescar-spring</artifactId>-->
-<!--                <version>${fescar.version}</version>-->
-<!--            </dependency>-->
-
-<!--            &lt;!&ndash;dependency for Apache Dubbo&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.fescar</groupId>-->
-<!--                <artifactId>fescar-dubbo</artifactId>-->
-<!--                <version>${fescar.version}</version>-->
-<!--            </dependency>-->
-
-            <!--dependency for Alibaba Dubbo-->
-<!--            <dependency>-->
-<!--                <groupId>com.alibaba.fescar</groupId>-->
-<!--                <artifactId>fescar-dubbo-alibaba</artifactId>-->
-<!--                <version>${fescar.version}</version>-->
-<!--            </dependency>-->
-
-<!--            <dependency>-->
-<!--                <groupId>org.apache.curator</groupId>-->
-<!--                <artifactId>curator-framework</artifactId>-->
-<!--                <version>${curator.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.curator</groupId>-->
-<!--                <artifactId>curator-client</artifactId>-->
-<!--                <version>${curator.version}</version>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
