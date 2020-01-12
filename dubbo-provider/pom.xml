@@ -7,10 +7,8 @@
 		<groupId>com.dubbo</groupId>
 		<artifactId>dubbo-examples</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/>
 	</parent>
 
-	<groupId>com.dubbo</groupId>
 	<artifactId>dubbo-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
