@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * @author: Lucifer
- * @desciption: consumer 服务
+ * @author: lingjun.jlj
+ * @desciption: dubbo consumer 服务
  */
 @EnableDubbo
 @SpringBootApplication

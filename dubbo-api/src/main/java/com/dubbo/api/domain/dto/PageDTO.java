@@ -1,12 +1,15 @@
 package com.dubbo.api.domain.dto;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/19 21:26
  * @description:
  */
+@Data
 public class PageDTO implements Serializable {
 
     private Integer start;
@@ -19,29 +22,5 @@ public class PageDTO implements Serializable {
     public PageDTO(Integer start, Integer size) {
         this.start = start;
         this.size = size;
-    }
-
-    public Integer getStart() {
-        return start;
-    }
-
-    public void setStart(Integer start) {
-        this.start = start;
-    }
-
-    public Integer getSize() {
-        return size;
-    }
-
-    public void setSize(Integer size) {
-        this.size = size;
-    }
-
-    @Override
-    public String toString() {
-        return "PageDTO{" +
-                "start=" + start +
-                ", size=" + size +
-                '}';
     }
 }

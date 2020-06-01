@@ -1,12 +1,15 @@
 package com.dubbo.consumer.utils;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/20 09:46
  * @description:
  */
+@Data
 public class ResponseModel<T> implements Serializable {
 
     private int status;
@@ -27,48 +30,6 @@ public class ResponseModel<T> implements Serializable {
     }
 
     public static <T> ResponseModel<T> Success() {
-        return new ResponseModel<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.SUCCESS.getText());
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    public long getTimeStamp() {
-        return timeStamp;
-    }
-
-    public void setTimeStamp(long timeStamp) {
-        this.timeStamp = timeStamp;
-    }
-
-    @Override
-    public String toString() {
-        return "ResponseModel{" +
-                "status=" + status +
-                ", data=" + data +
-                ", info='" + info + '\'' +
-                ", timeStamp=" + timeStamp +
-                '}';
+        return new ResponseModel<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.SUCCESS.getName());
     }
 }

@@ -29,9 +29,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <fescar.version>0.4.1</fescar.version>
-        <fastjson.version>1.2.68</fastjson.version>
+        <alibaba.fastjson.version>1.2.68</alibaba.fastjson.version>
         <curator.version>4.0.1</curator.version>
-        <dubbo.version>2.7.5</dubbo.version>
+        <alibaba.dubbo.version>2.7.7</alibaba.dubbo.version>
     </properties>
 
 
@@ -40,19 +40,29 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
+                <version>${alibaba.fastjson.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>${dubbo.version}</version>
+                <version>${alibaba.dubbo.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-dependencies-zookeeper</artifactId>
-                <version>${dubbo.version}</version>
+                <version>${alibaba.dubbo.version}</version>
                 <type>pom</type>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>

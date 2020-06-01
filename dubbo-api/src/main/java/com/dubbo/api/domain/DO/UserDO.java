@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author: Lucifer
+ * @author: lingjun.jlj
  * @date: 2018/11/19 21:23
  * @description:
  */
@@ -22,4 +22,6 @@ public class UserDO implements Serializable {
     private Integer status;
     private Date createTime;
     private Date updateTime;
+
+
 }
