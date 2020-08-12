@@ -4,7 +4,7 @@ import com.dubbo.api.domain.DO.UserDO;
 import com.dubbo.api.domain.dto.PageDTO;
 import com.dubbo.api.service.DemoService;
 import com.dubbo.provider.persist.UserMapper;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
  * @date: 2018/11/19 21:01
  * @description:
  */
-@Service(version = "1.0.0")
+@DubboService(version = "1.0.0")
 public class DemoServiceImpl implements DemoService {
 
     @Resource

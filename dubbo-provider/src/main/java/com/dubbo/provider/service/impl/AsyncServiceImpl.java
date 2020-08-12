@@ -2,7 +2,7 @@ package com.dubbo.provider.service.impl;
 
 import com.dubbo.api.service.AsyncService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.rpc.RpcContext;
 
 import java.util.concurrent.CompletableFuture;
@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
  * @description:
  */
 @Slf4j
-@Service(version = "1.0.0")
+@DubboService(version = "1.0.0")
 public class AsyncServiceImpl implements AsyncService {
 
 

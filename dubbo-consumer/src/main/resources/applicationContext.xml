@@ -15,8 +15,11 @@
 
     <dubbo:consumer timeout="3000"/>
 
+    <!--    将日志输出到应用本身的log-->
+    <dubbo:protocol accesslog="true"/>
+
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-<!--    <dubbo:reference id="demoService" interface="com.dubbo.api.service.DemoService"-->
-<!--                     version="1.0.0" timeout="6000" retries="0"/>-->
+    <!--    <dubbo:reference id="demoService" interface="com.dubbo.api.service.DemoService"-->
+    <!--                     version="1.0.0" timeout="6000" retries="0"/>-->
 
 </beans>

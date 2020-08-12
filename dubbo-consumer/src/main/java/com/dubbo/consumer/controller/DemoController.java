@@ -5,6 +5,7 @@ import com.dubbo.api.service.AsyncService;
 import com.dubbo.api.service.DemoService;
 import com.dubbo.consumer.utils.ResponseModel;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,9 +25,9 @@ import java.util.concurrent.CompletableFuture;
 @RequestMapping(value = "/demo/")
 public class DemoController {
 
-    @Reference(version = "1.0.0")
+    @DubboReference(version = "1.0.0")
     private DemoService demoService;
-    @Reference(version = "1.0.0")
+    @DubboReference(version = "1.0.0")
     private AsyncService asyncService;
 
     @GetMapping(value = "findUserByPage")
